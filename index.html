@@ -3,9 +3,43 @@
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><meta name="description" content="Patrick S Chen is a C# software engineer ">
 
 <title>Patrick S. Chen - Software Engineer - Seattle, WA</title>
+<script type="text/javascript">
+//Initializing
+var i = 0;
+var images = []; //array
+var time = 7000; // time in millie seconds
+
+//images
+
+images[0] = "url(./Images/back.jpg)";
+images[1] = "url(./Images/back1.jpg)";
+images[2] = "url(./Images/back2.jpg)";
+images[3] = "url(./Images/back3.jpg)";
+images[4] = "url(./Images/back4.jpg)";
+images[5] = "url(./Images/back5.jpg)";
+images[6] = "url(./Images/back6.jpg)";
+images[7] = "url(./Images/back7.jpg)";
+images[8] = "url(./Images/back8.jpg)";
+images[9] = "url(./Images/back9.jpg)";
+//function
+
+function changeImage() {
+    var el = document.getElementById('body');
+	var i = Math.floor(Math.random() * 10);
+    el.style.backgroundImage = images[i];
+    
+    setTimeout('changeImage()', time);
+}
+
+window.onload = changeImage;
+
+</script>
 <style>
 body {
-background-image: url("back.jpg");
+overflow-x:hidden;
+margin: 0;
+padding: 0;
+width: 100%;
 background-repeat: no-repeat;	
 background-position: center top; 
 font-size:large;
@@ -33,43 +67,32 @@ left:50px;
 
 
 }
+#card{
+background-color: grey;
+padding:10px;
+color: black;
+font: Monaco;
+}
 </style>
 </head>
 
-<body>
+<body id="body">
 
 <div id="mainbody">
 	<div id="content">
 		<table>
 		<tbody><tr>
-			
-			
 			<td valign="top">
-					<table width="100%">
+					<table id="card"  width="100%">
 
-					<tbody><!-- <tr>
-					
-						<td align="left">
-							<h3>Patrick Chen</h3>				</td>
-					</tr>
-					 -->
-					<!-- <tr>
-						<td></td>
-					</tr> -->
-					
-	<!-- 				<tr>
-					
-						<td align="center">
-						 Software Engineer | Soccer Fan | Home Brewer  	</td>
-					</tr><tr>
-						<td></td>
-						
-					</tr> -->
-					
+					<tbody>
+
 					<tr>
 						<td>
-						<!-- <b>Contact</b><br> -->
-						patrick711 at gmail<br>
+						Patrick Chen<br>.<br>
+						SPS Commerce<br>.<br>
+						Staff Software Engineer<br>.<br>
+						patrick711 at gmail<br><br>
 						<a href="http://www.linkedin.com/in/pschen">linkedIn</a><br>
 						<a href="https://github.com/patrick711">github</a><br>
 						
@@ -80,46 +103,11 @@ left:50px;
 					<tr>
 						<td></td>
 					</tr>
-					<tr>
-						<td><b>Current Employer</b><br> <a href="http://www.spscommerce.com/">SPS Commerce</a> - Senior Software Engineer
-						</td>
-					</tr>
+					
 					<tr>
 						<td></td>
 					</tr>
-					<!--<tr>
-						<td><b>Projects</b>
-							<ul> 
-								 <li><a href="https://www.facebook.com/pages/Amalgam-Labs/264898646913507?bookmark_t=page">Amalgam Labs</a> - My Mobile dev business.</li>
-								<li><a href="http://tinyurl.com/865sbf3">Family Photos for Facebook</a> - Android app for viewing family photos on facebook (Java)</li>
-								<li><a href="http://www.thedailyb.com">The DailyB</a> - An online budgeting tool (SQL/C#></li>
-							</ul>
-						</td>
-					</tr>
 					
-					<tr>
-						<td><hr></td>
-					</tr>			
-					<tr>
-						<td><b>Activities</b>
-						
-							<ul>
-
-								
-								<li>Building EDI products</li>
-								<li>Trying to bake bread</li>
-								<li>Brewing Wine &amp; Cider</li>
-								<li>Woodworking</li>
-								<li>Reading Science fiction</li>
-								<li>Trying to understand the stock market</li>
-								<li>Playing indoor soccer</li>
-
-							</ul>
-						</td>
-						
-					</tr>
-					-->	
-						
 						
 				</tbody></table>
 			
